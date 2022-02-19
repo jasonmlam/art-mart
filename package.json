@@ -1,0 +1,31 @@
+{
+  "name": "assignment-1",
+  "version": "1.0.0",
+  "description": "art mart",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonmlam/art-mart.git"
+  },
+  "keywords": [
+    "heroku",
+    "art",
+    "mart"
+  ],
+  "author": "jason-lam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonmlam/art-mart/issues"
+  },
+  "homepage": "https://github.com/jasonmlam/art-mart#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
+  "engines": {
+    "node": "14.15.5"
+  }
+}
