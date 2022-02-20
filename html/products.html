@@ -21,47 +21,69 @@
     <!-- Navigation Bar for Products and Contact pages -->
     <nav class="navbar navbar-light bg-light">
 
-      <!-- Home Button -->
-      <a href="https://martart.herokuapp.com/">
+      <div class="container-fluid">
+
+        <!-- Home Button -->
+        <a href="/">
+          <button>
+            <img src="https://frtim.files.wordpress.com/2010/11/chalice.jpg?w=220&h=298" width="30" height="30" alt="">
+          </button>
+        </a>
+  
+        <!-- Contact Button -->
         <button>
-          <img src="https://frtim.files.wordpress.com/2010/11/chalice.jpg?w=220&h=298" width="30" height="30" alt="">
+          <a href="/contact">Contact Us</a>
         </button>
-      </a>
+  
+        <!-- Products Button -->
+        <button>
+          <a href="/products">Products</a>
+        </button> 
 
-      <!-- Contact Button -->
-      <a href="/contact">
-        <button>Contact Us</button>
-      </a>
-
-      <!-- Products Button -->
-      <a href="/products">
-        <button>Products</button>
-      </a>      
-
+      </div>
+    
     </nav>
 
     <!-- all of the products -->
-    <h2>paintings</h2>
+    <h2">paintings</h2>
 
-    <span>
-      <div class="card text-center" style="width: 18rem;">
-        <img src="https://i.gyazo.com/6a989e244ddf975e68b53ac06cb69b02.jpg" class="card-img-top" width="140">
-        <div class="card-body">
-          <h5 class="card-title">chaim soutine</h5>
-          <p class="card-text">the chamber valet</p>
-          <!-- <a href="https://i.gyazo.com/6a989e244ddf975e68b53ac06cb69b02.jpg" class="btn btn-secondary">expand</a> -->
-        </div>
-      </div>
-  
-      <div class="card text-center" style="width: 18rem;">
-        <img src="https://i.gyazo.com/3487b88d830f6030502ee4d892bde6ff.jpg" class="card-img-top" width="140">
-        <div class="card-body">
-          <h5 class="card-title">willem de kooning</h5>
-          <p class="card-text">woman i</p>
-          <!-- <a href="https://i.gyazo.com/3487b88d830f6030502ee4d892bde6ff.jpg" class="btn btn-secondary">expand</a> -->
-        </div>
-      </div>
-    </span>
+    <table class="table align-middle">
+      <tbody>
+        <td>
+          <div class="card text-center" style="width: 18rem;">
+            <img src="https://i.gyazo.com/6a989e244ddf975e68b53ac06cb69b02.jpg" class="card-img-top" width="140">
+            <div class="card-body">
+              <h5 class="card-title">chaim soutine</h5>
+              <p class="card-text">the chamber valet</p>
+              <!-- <a href="https://i.gyazo.com/6a989e244ddf975e68b53ac06cb69b02.jpg" class="btn btn-secondary">expand</a> -->
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <div class="card text-center" style="width: 18rem;">
+            <img src="https://i.gyazo.com/3487b88d830f6030502ee4d892bde6ff.jpg" class="card-img-top" width="140">
+            <div class="card-body">
+              <h5 class="card-title">willem de kooning</h5>
+              <p class="card-text">woman i</p>
+              <!-- <a href="https://i.gyazo.com/3487b88d830f6030502ee4d892bde6ff.jpg" class="btn btn-secondary">expand</a> -->
+            </div>
+          </div>
+        </td>
+
+        <td>
+          <div class="card text-center" style="width: 18rem;">
+            <img src="https://i.gyazo.com/3487b88d830f6030502ee4d892bde6ff.jpg" class="card-img-top" width="140">
+            <div class="card-body">
+              <h5 class="card-title">willem de kooning</h5>
+              <p class="card-text">woman i</p>
+              <!-- <a href="https://i.gyazo.com/3487b88d830f6030502ee4d892bde6ff.jpg" class="btn btn-secondary">expand</a> -->
+            </div>
+          </div>
+        </td>
+
+      </tbody>
+    </table>
     
     <h2>clothing</h2>
     <span>Examples: insert a few clothing items you want</span>
@@ -77,6 +99,11 @@
     <div>
       How would you describe your taste in music?
       Maybe insert a list of artists you've been listening to [here]
+    </div>
+
+    <div class="text-center p-3" style="background-color: white;">
+      © 2022 Copyright:
+      <a class="text-dark" href="/">Jason Lam</a>
     </div>
 
 
