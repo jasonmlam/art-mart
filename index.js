@@ -15,6 +15,10 @@ app.get("/products", function (req, res){
   res.sendFile(__dirname + "/html/products.html");
 })
 
+app.get("/style", function (req, res){
+  res.sendFile(__dirname + "/css/style.css");
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
