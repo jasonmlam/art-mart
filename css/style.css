@@ -1,0 +1,131 @@
+/* General */
+#normalfont {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    color: #3E2C41;
+    background-color: #6E85B2;    
+}
+
+h1 {
+    background-color: #6E85B2;
+}
+
+p {
+    color: #6E85B2;
+}
+
+div {
+    background-color: #6E85B2;
+}
+
+#description {
+    color: #5C527F;
+}
+
+/* Nav Bar */
+#nav {
+    margin: auto;
+}
+
+.btn {
+    background-color: #3E2C41;
+    color:#6E85B2;
+}
+
+#homebtn {
+    background: none;
+    padding:0.1px;
+}
+
+
+/* Home Page */
+
+
+.wrapper {
+    display: inline-block;
+    margin: 20px;
+}
+
+/* audio player  */
+#audioplayer {
+    position: relative;
+    margin: 1em;
+}
+
+.video {
+    margin: 5% auto auto 35.5%;
+    padding: 5px;
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background-color: #3E2C41;
+}
+
+/* Contact Page */
+
+.contactus {
+    font-size: large;
+    background-color: #5C527F;
+    padding: 50px;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    text-shadow: 2px 4px #33bb87;
+    margin: 5% auto auto 40%;
+}
+
+.giffycontainer {
+    width: 260px;
+    height: 150px;
+    box-shadow: 10px 10px 10px 2px #ccc;
+    margin: auto;
+}
+
+/* Products Page */
+.paintings {
+    padding-top: 50px;
+    padding-left: 40px;
+    width: 20rem;
+    text-align: center;
+    display: inline-block;
+}
+
+#eachpainting {
+    border-radius: 10px;
+    height: 50%;
+    transform: scale(0.8);
+    background-color: radial-gradient(#261C2C, #5C527F);
+}
+
+.audioart {
+    padding: 50px;
+}
+
+.huh {
+    background-color: radial-gradient(#e66465, #9198e5);
+}
+
+.random {
+    width: 100px;
+    height: 100px;
+    background-color: #261C2C;
+    animation-name: example;
+    animation-duration: 4s;
+    margin: auto;
+}
+
+@keyframes example {
+    from {background-color: #6E85B2;}
+    to {background-color: #5C527F;}
+}
+
+/* Footer */
+#footer {
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+}
+
+
