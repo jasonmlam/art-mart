@@ -1,16 +1,16 @@
 function checkForm() {
 
-    var firstName = document.getElementById('firstName').value; /* getting value by id of form fields */
-    var lastName = document.getElementById('lnlastNameame').value;
-    var address = document.getElementById('address').value;
-    var city = document.getElementById('city').value;
-    var state = document.getElementById('state').value;
-    var zip = document.getElementById('zip').value;
-    var ptype = document.getElementById('ptype').value;
-    var email = document.getElementById('email').value;
-    var phone = document.getElementById('phone').value;
-    var numbers = /^[0-9]+$/; /* used to compare numbers */
-    var emailformat = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/; /* used to compare valid email address */    
+    // var firstName = document.getElementById('firstName').value; /* getting value by id of form fields */
+    // var lastName = document.getElementById('lnlastNameame').value;
+    // var address = document.getElementById('address').value;
+    // var city = document.getElementById('city').value;
+    // var state = document.getElementById('state').value;
+    // var zip = document.getElementById('zip').value;
+    // var ptype = document.getElementById('ptype').value;
+    // var email = document.getElementById('email').value;
+    // var phone = document.getElementById('phone').value;
+    // var numbers = /^[0-9]+$/; /* used to compare numbers */
+    // var emailformat = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/; /* used to compare valid email address */    
 
     if (document.userForm.firstName.value == "")
     {
@@ -40,14 +40,14 @@ function checkForm() {
         return false;
     }    
 
-    if ( document.myForm.Zip.value == "" || 
-        isNaN( document.myForm.Zip.value ) ||
-        document.myForm.Zip.value.length != 5 ) 
+    if ( document.myForm.zip.value == "" || 
+        isNaN( document.myForm.zip.value ) ||
+        document.myForm.zip.value.length != 5 ) 
     {
         alert( "Please provide a zip in the format #####." );
-        document.myForm.Zip.focus() ;
+        document.myForm.zip.focus() ;
         return false;
-    }      
+    }      	    
 
     // /* check fields are empty */
     // if (firstName==""||lastName=="",address==""||city=="",state==""||zip=="",ptype==""||email=="") {
@@ -75,6 +75,19 @@ function checkForm() {
     //     alert('please enter valid email id');
     // }
 
-    
-
 }
+
+function validateEmail() 
+{
+    var emailID = document.myForm.email.value;
+    atpos = emailID.indexOf("@");
+    dotpos = emailID.lastIndexOf(".");
+
+    if (atpos < 1 || ( dotpos - atpos < 2 )) 
+    {
+        alert("Please enter correct email ID")
+        document.myForm.email.focus() ;
+        return false;
+    }
+    return( true );
+}	

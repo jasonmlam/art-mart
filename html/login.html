@@ -61,7 +61,7 @@
         login
     </h1>    
 
-    <form action="" name="userForm" method="get" onsubmit="return checkForm()">
+    <form action="/cgi-bin/test.cgi" name="userForm" onsubmit = "return(checkForm()) && validateEmail();">
         <table cellspacing = "2" cellpadding = "2">
 
         <tr>
