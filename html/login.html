@@ -20,8 +20,48 @@
     <link rel="icon" href="https://frtim.files.wordpress.com/2010/11/chalice.jpg?w=220&h=298">    
   </head>
 
-<body>
-   <form action="" name="userForm" method="get" onsubmit="return checkForm();">
+<body class="background" id="normalfont">
+    <!-- how user sees the title of the page -->
+    <h1 class="mt-2 wrapper">art mart</h1>
+
+    <!-- Navigation Bar for Products and Contact pages -->
+    <nav class="navbar">
+      <div id="nav">
+
+        <!-- Home Button -->
+        <a href="/"
+        class="btn"
+        id="homebtn">
+          <img src="https://frtim.files.wordpress.com/2010/11/chalice.jpg?w=220&h=298" width="40" height="38" alt="">
+        </a>
+
+        <!-- Products Button -->
+        <a href="/products" 
+        class="btn"
+        role="button"
+        aria-pressed="true">Products</a>
+
+        <!-- Contact Button -->
+        <a href="/contact" 
+        class="btn"
+        role="button" 
+        aria-pressed="true">Contact Us</a>
+
+        <!-- Login Button -->
+        <a href="/login" 
+        class="btn"
+        role="button" 
+        aria-pressed="true">Login</a>        
+
+      </div>
+    </nav>
+
+    <!-- Description of the Site -->
+    <h1 class="wrapper">
+        login
+    </h1>    
+
+    <form action="" name="userForm" method="get" onsubmit="return checkForm();">
      <table>
 
         <tr>
@@ -79,7 +119,7 @@
      </table>
 
      <br>
-     
+
      <button>Submit</button>
    </form>
 </body>
