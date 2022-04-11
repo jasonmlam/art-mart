@@ -61,68 +61,90 @@
         login
     </h1>    
 
-    <form id ="userForm" action="" name="userForm">
-        <table cellspacing = "2" cellpadding = "2">
+    <!-- <form id="userForm" name="userForm">    
 
-        <tr>
-            <td>First Name</td>
-            <td><input type="text" id="firstName" name="firstName"><span id="showError"></span></td>
-        </tr>
+        <h4 class="wrapper">first name</h4>
+        <input type="text" id="firstName">
 
-        <tr>
-            <td>Last Name</td>
-            <td><input type="text" id="lastName" name="lastName"><span id="showError"></span></td>
-        </tr>
+        <h4 class="wrapper">last name</h4>
+        <input type="text" id="lastName">
 
-        <tr>
-            <td>Address</td>
-            <td><textarea name="address" id="address" cols="30" rows="5"></textarea><span id="showError"></span></td>
-        </tr>
+        <h4 class="wrapper">street address</h4>
+        <input  id="address" cols="30" rows="5">
 
-        <tr>
-            <td>City</td>
-            <td><input type="text" id="city" name="city"><span id="showError"></span></td>
-        </tr>
+        <h4 class="wrapper">city</h4>
+        <input type="text" id="city">
 
-        <tr>
-            <td>State</td>
-            <td>
-                <select name="stateName" id="state">
-                    <option value="">select</option>
-                    <option value="FL">FL</option>
-                    <option value="WA">WA</option>
-                </select>
+        <h4 class="wrapper">state</h4>
+        <select id="state">
+            <option value="">select</option>
+            <option value="FL">FL</option>
+            <option value="WA">WA</option>
+        </select>
 
-                <span id="showError"></span>
-            </td>
-        </tr>
+        <h4 class="wrapper">zip code</h4>
+        <input type="text" id="zip" name="zipcode">
 
-        <tr>
-            <td>Zip code</td>
-            <td><input type="text" id="zip" name="zipcode"><span id="showError"></span></td>
-        </tr>
+        <h4 class="wrapper">phone number</h4>
+        <input type="text" id="phone">
 
-        <tr>
-            <td>Phone number</td>
-            <td>
-                <!-- Personal <input type="radio" value="Personal" name="ptype" id="ptype" >
-                Business <input type="radio" value="Business" name="ptype" id="ptype" > -->
-                <input type="text" name="phoneNum" id="phone">
-                <!-- <span id="showError"></span> -->
-            </td>
-        </tr>
+        <h4 class="wrapper">email address</h4>
+        <input type="text" id="email">
 
-        <tr>
-            <td>Email</td>
-            <td><input type="text" name="emailid" id="email"><span id="showError"></span></td>
-        </tr>
+        <button type = "button" value = "Submit" onclick="checkForm()">submit</button>
 
-        <tr>
-            <td></td>
-            <td><button type = "button" value = "Submit" onsubmit="checkForm();">submit</button></td>
-            <!-- <button type = "button" onclick="checkForm() && validateEmail();">Submit</button> -->
-         </tr>
-        </table>
-   </form>
+   </form> -->
+   <form id="form">
+      <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" placeholder="John" /><br />
+        <label for="lname">Last name:</label><br />
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Doe"
+        /><br /><br />
+        <label for="address">Address:</label><br />
+        <input
+          type="text"
+          id="address"
+          name="address"
+          placeholder="123 Jane St"
+        /><br /><br />
+        <label for="city">City:</label><br />
+        <input
+          type="text"
+          id="city"
+          name="city"
+          placeholder="Orlando"
+        /><br /><br />
+        <label for="state">State:</label> <br />
+        <select name="state" id="state">
+          <option value="georgia">Georgia</option>
+          <option value="florida">Florida</option>
+          <option value="alabama">Alabama</option>
+        </select>
+        <br />
+        <label for="zip">Zip Code:</label><br />
+        <input
+          type="text"
+          id="zip"
+          name="zip"
+          placeholder="32826"
+        /><br /><br />
+        <label for="phone">Phone Number:</label><br />
+        <input type="text" id="phone" name="phone" placeholder="4072223333" />
+        <br />
+        <label for="email">Email:</label><br />
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="john@gmail.com"
+        /><br /><br />
+        <input type="radio" id="phoneType" value="personal" />Personal
+        <input type="radio" id="phoneType" value="business" />Business<br />
+      <button type="button" onclick="checkForm()">Submit</button>
+  </form>
 </body>
 </html>
