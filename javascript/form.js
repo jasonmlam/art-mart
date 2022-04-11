@@ -9,14 +9,31 @@ function checkForm() {
     // var ptype = document.getElementById('ptype').value;
     // var email = document.getElementById('email').value;
     // var phone = document.getElementById('phone').value;
-    // var numbers = /^[0-9]+$/; /* used to compare numbers */
-    // var emailformat = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/; /* used to compare valid email address */    
 
-    let form = document.getElementById("form");
+    let form = document.getElementById("userForm");
     let data = new FormData(form);
-    console.log(data.get("zip"))
-    return false;
+
+    const phoneRegex = RegExp(/[0-9]{10}/); 
+    const zipRegex = RegExp(/[0-9]{5}/); 
+    const emailRegex  = RegExp(/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/); /* used to compare valid email address */ 
     
+    let phoneNum = data.get("phone");
+    let email = data.get("email");
+    let zip = data.get("zip");
+    let firstName = data.get("firstName");
+    let lastName = data.get("lastName");
+    let address = data.get("address");
+    let city = data.get("city");
+    let state = data.get("stateName");
+
+
+    console.log(phoneNum);
+    console.log(phoneRegex.test(phoneNum));
+
+    console.log(email);
+    console.log(emailRegex.test(email));
+    return false;
+
 
     // console.log(formObject);                                             
 
@@ -60,18 +77,3 @@ function checkForm() {
 
 
 }
-
-function validateEmail() 
-{
-    var emailID = document.myForm.emailid.value;
-    atpos = emailid.indexOf("@");
-    dotpos = emailid.lastIndexOf(".");
-
-    if (atpos < 1 || ( dotpos - atpos < 2 )) 
-    {
-        alert("Please enter correct email ID")
-        document.myForm.emailid.focus() ;
-        return false;
-    }
-    return(true);
-}	

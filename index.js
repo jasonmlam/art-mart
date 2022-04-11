@@ -16,9 +16,9 @@ app.get("/products", function (req, res){
   res.sendFile(__dirname + "/html/products.html");
 })
 
-app.get("/style", function (req, res){
-  res.sendFile(__dirname + "/css/style.css");
-})
+// app.get("/style", function (req, res){
+//   res.sendFile(__dirname + "/css/style.css");
+// })
 
 app.get("/login", function (req, res){
   res.sendFile(__dirname + "/html/login.html")
