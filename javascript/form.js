@@ -14,28 +14,28 @@ function checkForm() {
 
     if (document.userForm.firstName.value == "")
     {
-        alret("Please provide your first name");
+        alert("Please provide your first name");
         document.userForm.firstName.focus();
         return false;
     }
 
     if (document.userForm.lastName.value == "")
     {
-        alret("Please provide your last name");
+        alert("Please provide your last name");
         document.userForm.firstName.focus();
         return false;
     }
 
     if (document.userForm.address.value == "")
     {
-        alret("Please provide your street address");
+        alert("Please provide your street address");
         document.userForm.address.focus();
         return false;
     }
 
     if (document.userForm.city.value == "")
     {
-        alret("Please provide your city");
+        alert("Please provide your city");
         document.userForm.city.focus();
         return false;
     }    
