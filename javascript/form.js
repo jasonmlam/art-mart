@@ -15,9 +15,9 @@ function checkForm() {
     let form = document.getElementById(form);
     let data = new FormData(form);
 
-    console.log(data);
+    alert(data);
 
-    console.log(formObject);                                             
+    // console.log(formObject);                                             
 
     if (document.userForm.firstName.value == "")
     {
@@ -57,31 +57,6 @@ function checkForm() {
     }
     return (true);
 
-    // /* check fields are empty */
-    // if (firstName==""||lastName=="",address==""||city=="",state==""||zip=="",ptype==""||email=="") {
-    //     alert("Please Fill All Required Field");
-    // return false; 
-    // }
-
-    // /* check length of input data if its 1 it will show alert msg */
-    // if (firstName.length<=1||lastName.length<=1,address.length<=1||city.length<=1,zip.length<=1||email.length<=1) {
-    //     alert("input must be greater than one character");      
-    // }
-
-    // /* check zip code must be numbers and length should not be less than or greater than 5 */
-    // if ((!zip.match(numbers)) || zip.length!==5){
-    //     alert('enter only numbers or length of zip code must be equal to 5');
-    // }
-
-    // /* check phone number must be numbers and length should not be less than or greater than 10 */
-    // if ((!phone.match(numbers)) || phone.length!==10){
-    //     alert('enter only numbers or length of Phone number must be equal to 10');
-    // }
-
-    // /* check valid email id */
-    // if ((!email.match(emailformat))){
-    //     alert('please enter valid email id');
-    // }
 
 }
 
@@ -97,5 +72,5 @@ function validateEmail()
         document.myForm.emailid.focus() ;
         return false;
     }
-    return( true );
+    return(true);
 }	

@@ -61,7 +61,7 @@
         login
     </h1>    
 
-    <form action="" name="userForm" onsubmit = "checkForm() && validateEmail();">
+    <form action="" name="userForm">
         <table cellspacing = "2" cellpadding = "2">
 
         <tr>
@@ -119,7 +119,7 @@
 
         <tr>
             <td></td>
-            <td><input type = "submit" value = "Submit" /></td>
+            <td><input type = "submit" value = "Submit" onclick="checkForm() && validateEmail();" /></td>
          </tr>
         </table>
    </form>
