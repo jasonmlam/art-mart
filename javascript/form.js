@@ -47,7 +47,8 @@ function checkForm() {
         alert( "Please provide a zip in the format #####." );
         document.myForm.zip.focus() ;
         return false;
-    }      	    
+    }
+    return (true);
 
     // /* check fields are empty */
     // if (firstName==""||lastName=="",address==""||city=="",state==""||zip=="",ptype==""||email=="") {
@@ -79,14 +80,14 @@ function checkForm() {
 
 function validateEmail() 
 {
-    var emailID = document.myForm.email.value;
-    atpos = emailID.indexOf("@");
-    dotpos = emailID.lastIndexOf(".");
+    var emailID = document.myForm.emailid.value;
+    atpos = emailid.indexOf("@");
+    dotpos = emailid.lastIndexOf(".");
 
     if (atpos < 1 || ( dotpos - atpos < 2 )) 
     {
         alert("Please enter correct email ID")
-        document.myForm.email.focus() ;
+        document.myForm.emailid.focus() ;
         return false;
     }
     return( true );
