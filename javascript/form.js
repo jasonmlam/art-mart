@@ -12,6 +12,13 @@ function checkForm() {
     // var numbers = /^[0-9]+$/; /* used to compare numbers */
     // var emailformat = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/; /* used to compare valid email address */    
 
+    let form = document.getElementById(form);
+    let data = new FormData(form);
+
+    console.log(data);
+
+    console.log(formObject);                                             
+
     if (document.userForm.firstName.value == "")
     {
         alert("Please provide your first name");
